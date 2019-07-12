@@ -5,19 +5,19 @@ const submitButton = document.getElementById('submit-button');
 displayResult();
 
 submitButton.addEventListener('click', () => {
-  displayResult();
+    displayResult();
 });
 
 function displayResult() {
-  if (isEven(numberInput.value)) {
-    resultNode.textContent = 'even';
-  }
-  else {
-    resultNode.textContent = 'odd';
-  }
+    if(isEven(numberInput.value)) {
+        resultNode.textContent = 'even';
+    }
+    else {
+        resultNode.textContent = 'odd';
+    }
 }
 
 function isEven(number) {
-  if(number % 2 === 0) return true;
-  return false;
+    if(number % 2 === 0) return true;
+    return false;
 }

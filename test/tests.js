@@ -1,8 +1,8 @@
 const test = QUnit.test;
 
 function isEven(number) {
-  if(number % 2 === 0) return true;
-  return false;
+    if(number % 2 === 0) return true;
+    return false;
 }
 
 test ('given an even number, return true', function(assert) {
